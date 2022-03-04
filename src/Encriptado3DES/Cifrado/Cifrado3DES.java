@@ -1,7 +1,6 @@
-package Cifrado;
+package Encriptado3DES.Cifrado;
 
-import GeneracionClaves.Claves3DES;
-import GestionFicheros.Ficheros;
+import Encriptado3DES.GestionFicheros.Ficheros;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
@@ -10,9 +9,9 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 
-import static GeneracionClaves.Claves3DES.ALGORITMO_CLAVE_SIMETRICA_DESede;
-import static GestionFicheros.Ficheros.NOM_FICH_CLAVE;
-import static GestionFicheros.Ficheros.escribirFichero;
+import static Encriptado3DES.GeneracionClaves.Claves3DES.ALGORITMO_CLAVE_SIMETRICA_DESede;
+import static Encriptado3DES.GestionFicheros.Ficheros.NOM_FICH_CLAVE;
+import static Encriptado3DES.GestionFicheros.Ficheros.escribirFichero;
 
 public class Cifrado3DES {
 

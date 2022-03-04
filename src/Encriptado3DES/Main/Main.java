@@ -1,7 +1,7 @@
-package Main;
+package Encriptado3DES.Main;
 
-import Cifrado.Cifrado3DES;
-import GeneracionClaves.Claves3DES;
+import Encriptado3DES.Cifrado.Cifrado3DES;
+import Encriptado3DES.GeneracionClaves.Claves3DES;
 
 import java.util.Scanner;
 

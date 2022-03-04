@@ -1,4 +1,4 @@
-package GestionFicheros;
+package Encriptado3DES.GestionFicheros;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -9,7 +9,7 @@ public class Ficheros {
 
     private static final String ALGORITMO_CLAVE_SIMETRICA_DESede = "DESede";// 3DES
 
-    public static final String NOM_FICH_CLAVE = "C:\\Users\\GL512\\IdeaProjects\\EncriptadoDESede\\src\\GeneracionClaves\\Claves\\";
+    public static final String NOM_FICH_CLAVE = "C:\\Users\\GL512\\IdeaProjects\\EncriptadoDESede\\src\\Encriptado3DES.GeneracionClaves\\Claves\\";
 
 
     public static String generarRuta(String nomFichClave) {

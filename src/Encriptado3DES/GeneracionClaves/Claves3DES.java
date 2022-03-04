@@ -1,6 +1,6 @@
-package GeneracionClaves;
+package Encriptado3DES.GeneracionClaves;
 
-import GestionFicheros.Ficheros;
+import Encriptado3DES.GestionFicheros.Ficheros;
 
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -10,8 +10,6 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
-
-import static javax.security.auth.callback.ConfirmationCallback.NO;
 
 public class Claves3DES {
 
