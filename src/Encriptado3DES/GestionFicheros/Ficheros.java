@@ -9,7 +9,7 @@ public class Ficheros {
 
     private static final String ALGORITMO_CLAVE_SIMETRICA_DESede = "DESede";// 3DES
 
-    public static final String NOM_FICH_CLAVE = "C:\\Users\\GL512\\IdeaProjects\\EncriptadoDESede\\src\\Encriptado3DES.GeneracionClaves\\Claves\\";
+    public static final String NOM_FICH_CLAVE = "C:\\Users\\GL512\\IdeaProjects\\EncriptadoDESede\\src\\Encriptado3DES\\GeneracionClaves\\Claves\\";
 
 
     public static String generarRuta(String nomFichClave) {
@@ -60,8 +60,9 @@ public class Ficheros {
              BufferedInputStream is = new BufferedInputStream(fis);
              BufferedOutputStream os = new BufferedOutputStream(fos)) {
             byte[] buff = new byte[cifrado.getBlockSize()];
-            while (is.read(buff) != -1) {
-                os.write(cifrado.update(buff));
+            int bytesLeidos;
+            while ((bytesLeidos = is.read(buff)) != -1) {
+                os.write(cifrado.update(buff, 0, bytesLeidos));
             }
             os.write(cifrado.doFinal());
         } catch (IllegalBlockSizeException e) {
